@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Image x:Name="MyImage" HorizontalAlignment="Left" Height="309" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="BrowseButton" Content="Open" HorizontalAlignment="Left" VerticalAlignment="Top" Width="252" Margin="255,106,0,0" Height="64" Click="BrowseButton_Click"/>
+
     </Grid>
 </Window>

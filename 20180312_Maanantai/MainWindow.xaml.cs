@@ -24,5 +24,16 @@ namespace _20180312_Maanantai
         {
             InitializeComponent();
         }
+
+        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog open = new Microsoft.Win32.OpenFileDialog();
+
+            Nullable<bool> result = open.ShowDialog();
+            if (result == true)
+            {
+                MyImage.Source = new BitmapImage(new Uri(open.FileName));
+            }
+        }
     }
 }
